@@ -3,7 +3,7 @@
   "description": "Use Vue with Class and TypeScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "build": "tsc",
     "lint": "tslint -p tsconfig.json --fix"
