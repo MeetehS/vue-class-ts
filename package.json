@@ -1,17 +1,20 @@
 {
   "name": "vue-class-ts",
   "description": "Use Vue with Class and TypeScript",
+  "version": "0.0.1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "version": "0.0.1",
   "scripts": {
     "build": "tsc",
-    "lint": "tslint -p tsconfig.json --fix"
+    "lint": "tslint -p tsconfig.json --fix",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/MeetehS/vue-class-ts.git"
   },
+  "keywords": ["vue", "class-component", "typescript", "tsx", "jsx"],
+  "author": "猫大爷 zhengguang1211@gmail.com",
   "dependencies": {
     "vue-property-decorator": "^7.2.0",
     "vue-tsx-support": "^2.2.2"

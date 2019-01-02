@@ -2,15 +2,12 @@
 # NPM files
 ############################
 **/node_modules
-**/bower_components
 node_modules
-bower_components
 npm-debug.log*
 .node_repl_history
 .node_history
 .lock-wscript
 .npm
-.gitlab-ci.yml
 
 
 ############################
@@ -92,24 +89,9 @@ log
 
 
 ############################
-# By Project
+# Ignore for Publish - Source
 ############################
-pids
-*.pid
-*.rel
-*.seed
-.grunt
-.svn
-__pycache__/
-*.py[cod]
-*$py.class
-
-
-############################
-# Build
-############################
-dist
-*_dist
+src
 
 
 ############################

@@ -2,9 +2,7 @@
 # NPM files
 ############################
 **/node_modules
-**/bower_components
 node_modules
-bower_components
 npm-debug.log*
 .node_repl_history
 .node_history
@@ -91,22 +89,6 @@ log
 
 
 ############################
-# By Project
-############################
-pids
-*.pid
-*.rel
-*.seed
-.grunt
-.svn
-__pycache__/
-*.py[cod]
-*$py.class
-
-
-############################
 # Build
 ############################
-dist
-*_dist
-
+lib
