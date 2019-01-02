@@ -115,6 +115,8 @@ doc
 .travis.yml
 .eslintrc
 .babelrc
+tsconfig.json
+tslint.json
 
 ############################
 # Ignore for Publish - Helpers
