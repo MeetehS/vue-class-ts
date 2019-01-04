@@ -4,6 +4,17 @@
     "tslint:recommended"
   ],
   "jsRules": {},
-  "rules": {},
+  "rules": {
+    "object-literal-sort-keys": false,
+    "quotemark": [true, "single", "jsx-double"],
+    "semicolon": [true, "never"],
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "any",
+        "named-imports-order": "any"
+      }
+    ]
+  },
   "rulesDirectory": []
 }
