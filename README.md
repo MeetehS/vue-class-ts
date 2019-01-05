@@ -1,19 +1,25 @@
 # vue-class-ts
+
 VueClassTs is a good helper for you to use Vue with Class and TypeScript, it's supported by [vue-class-component](https://github.com/vuejs/vue-class-component), [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator) and [vue-tsx-support](https://github.com/wonderful-panda/vue-tsx-support)
 
 ## Usage
+
 ### Install
+
 ```shell
 npm install vue-class-ts
 ```
 
 ### Config TypeScript with webpack
+
 #### Install devDependencies
+
 ```shell
 npm install --save-dev typescript ts-loader babel-plugin-syntax-jsx babel-plugin-transform-vue-jsx babel-helper-vue-jsx-merge-props babel-preset-env
 ```
 
 #### TypeScript config: [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+
 ```json
 {
   "include": [
@@ -36,12 +42,15 @@ npm install --save-dev typescript ts-loader babel-plugin-syntax-jsx babel-plugin
 ```
 
 ##### Reference
+
 - [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 - [TypeScript: JSX](https://www.typescriptlang.org/docs/handbook/jsx.html)
 - [wonderful-panda/vue-tsx-support](https://github.com/wonderful-panda/vue-tsx-support#install-and-enable)
 
 #### webpack config
+
 Add this to your vue webpack config
+
 ```js
 {
   module: {
@@ -76,11 +85,13 @@ Add this to your vue webpack config
 ```
 
 ##### Reference
+
 - [TypeScript: Integrating with Build Tools: webpack](https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html#webpack)
 - [Microsoft/TypeScript-Vue-Starter](https://github.com/Microsoft/TypeScript-Vue-Starter)
 - [vuejs/babel-plugin-transform-vue-jsx](https://github.com/vuejs/babel-plugin-transform-vue-jsx)
 
 #### babel config
+
 ```json
 {
   "presets": ["env"],
@@ -88,8 +99,23 @@ Add this to your vue webpack config
 }
 ```
 
+#### types/vue-shims.d.ts
+
+```ts
+declare module '*.vue' {
+  import Vue from 'vue'
+  export default Vue
+}
+```
+
+##### Reference
+
+- [Microsoft/TypeScript-Vue-Starter: Single File Components](https://github.com/Microsoft/TypeScript-Vue-Starter#single-file-components)
+
 ### Write your first vue component with tsx
+
 #### src/components/NavBar/index.tsx
+
 ```tsx
 import Vue, { CreateElement } from 'vue'
 import { ClassComponent, Component, Emit } from 'vue-class-ts'
@@ -155,6 +181,7 @@ export default class NavBar extends Component<IProps> {
 ```
 
 #### src/components/NavBar/template.vue
+
 ```html
 <style scoped>
   .RealNavBar {
