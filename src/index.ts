@@ -2,7 +2,7 @@ import { Component as ClassComponent, Emit, Inject, Mixins, Model, Prop, Provide
 import { Component as TSXComponent } from 'vue-tsx-support';
 
 class Component<Props, Events = {}, ScopedSlotArgs = {}> extends TSXComponent<Props, Events, ScopedSlotArgs> {
-  public $props!: Props;
+  $props!: Props;
 }
 
 export {
