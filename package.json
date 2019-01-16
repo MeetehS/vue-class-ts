@@ -1,6 +1,6 @@
 {
   "name": "vue-class-ts",
-  "description": "Use Vue with Class and TypeScript",
+  "description": "Coding Vue happier with Class and TypeScript",
   "version": "0.0.2",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

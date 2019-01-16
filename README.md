@@ -1,4 +1,5 @@
 # vue-class-ts
+Coding Vue happier with Class and TypeScript.
 
 VueClassTs is a good helper for you to use Vue with Class and TypeScript, it's supported by [vue-class-component](https://github.com/vuejs/vue-class-component), [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator) and [vue-tsx-support](https://github.com/wonderful-panda/vue-tsx-support)
 
@@ -218,3 +219,6 @@ export default class NavBar extends Component<IProps> {
   }
 </style>
 ```
+
+### Mixins
+[Mixins](./docs/mixins.md)
